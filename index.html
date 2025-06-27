@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lasya Connect</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Lasya's Dual Control</h1>
+
+  <!-- Dot + Toggle -->
+  <div id="dot"></div>
+  <label class="switch">
+    <input type="checkbox" id="dotToggle" />
+    <span class="slider"></span>
+  </label>
+  <p>Dot Toggle</p>
+
+  <!-- Camera Switch -->
+  <div class="slider-container">
+    <input type="range" min="0" max="2" value="1" id="camSwitch" />
+    <div class="labels">
+      <span>📷 Back</span>
+      <span>🚫 Off</span>
+      <span>🤳 Front</span>
+    </div>
+  </div>
+
+  <!-- Video Display -->
+  <video id="video" autoplay playsinline muted></video>
+
+  <!-- ID Display -->
+  <p id="peerId" class="peer-id"></p>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+  <script src="script.js"></script>
+</body>
+  </html>
